@@ -159,6 +159,23 @@ h4 {
   margin-inline: auto;
 }
 
+.container-nav {
+  width: min(1180px, calc(100% - 1.25rem));
+  margin-inline: auto;
+}
+
+@media (min-width: 640px) {
+  .container-nav {
+    width: min(1180px, calc(100% - 2rem));
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-nav {
+    width: min(1180px, calc(100% - 2.5rem));
+  }
+}
+
 .hero-header-image img {
   object-position: 62% 20%;
 }
