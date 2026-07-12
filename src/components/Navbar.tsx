@@ -32,10 +32,10 @@ export function Navbar() {
   return (
     <header
       style={{ color: "#ffffff" }}
-      className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
+      className={`sticky top-0 z-50 transition-all duration-500 bg-[var(--navy)] ${
         scrolled
-          ? "bg-[var(--navy)]/95 backdrop-blur-xl border-b border-white/10 py-3 shadow-xl shadow-black/30"
-          : "bg-[var(--navy)]/95 md:bg-transparent py-4 md:py-5 border-b border-white/10 md:border-transparent"
+          ? "backdrop-blur-xl border-b border-white/10 py-3 shadow-xl shadow-black/30"
+          : "border-b border-white/10 py-4 md:py-5"
       }`}
     >
       <div className="container-nav flex items-center justify-between gap-3 lg:gap-4">
@@ -75,7 +75,7 @@ export function Navbar() {
               {link.label}
             </Link>
           ))}
-          <Button href="/contact" variant="outline-gold" className="!py-2 !px-3.5 xl:!px-4 !text-[0.6rem] xl:!text-[0.62rem]">
+          <Button href="/contact" variant="outline-gold" className="btn-nav-apply !py-2 !px-3.5 xl:!px-4 !text-[0.6rem] xl:!text-[0.62rem]">
             Apply Now
           </Button>
         </div>
@@ -115,7 +115,7 @@ export function Navbar() {
                 </Link>
               ))}
             </div>
-            <Button href="/contact" variant="outline-gold" className="mt-2 w-full">
+            <Button href="/contact" variant="outline-gold" className="btn-nav-apply mt-2 w-full">
               Apply Now
             </Button>
           </nav>

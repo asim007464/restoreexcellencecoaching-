@@ -13,5 +13,6 @@ export const images = {
   runner: "https://images.unsplash.com/photo-1434682881908-b43d0467b798?w=1000&q=85",
   executive: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1000&q=85",
   luxuryGym: "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=1400&q=85",
+  mission: "/mission-motivated.png",
   stretch: "https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?w=1000&q=85",
 } as const;

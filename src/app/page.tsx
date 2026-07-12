@@ -1,6 +1,7 @@
 "use client";
 
 import { Button } from "@/components/Button";
+import { PremiumButton } from "@/components/PremiumButton";
 import { MotionHero, MotionItem, MotionReveal, MotionStagger } from "@/components/Motion";
 import { SiteImage } from "@/components/SiteImage";
 import { images } from "@/lib/images";
@@ -200,7 +201,7 @@ export default function HomePage() {
   return (
     <>
       {/* HERO */}
-      <section className="relative min-h-[78vh] md:min-h-screen flex items-end lg:items-center overflow-hidden section-dark">
+      <section className="relative min-h-[70vh] md:min-h-[calc(100vh-5.5rem)] flex items-end lg:items-center overflow-hidden section-dark">
         <div className="absolute inset-0 hero-header-image hidden md:block">
           <SiteImage
             src={images.header}
@@ -212,7 +213,7 @@ export default function HomePage() {
         </div>
         <div className="absolute inset-0 md:hidden bg-gradient-to-br from-navy via-navy-soft to-navy-deep" />
 
-        <div className="container-site relative z-10 pb-16 pt-28 sm:pb-20 sm:pt-32 md:pb-24 md:pt-40 lg:py-40 w-full">
+        <div className="container-site relative z-10 pb-16 pt-12 sm:pb-20 sm:pt-16 md:pb-24 md:pt-20 lg:py-32 w-full">
           <div className="max-w-3xl">
             <MotionHero>
               <p className="eyebrow mb-5 md:mb-7">Elite Performance Coaching</p>
@@ -261,14 +262,14 @@ export default function HomePage() {
 
       {/* MISSION */}
       <section className="grid lg:grid-cols-2 min-h-[620px]">
-        <MotionReveal className="relative min-h-[320px] img-zoom-wrap">
+        <MotionReveal className="relative min-h-[320px] lg:min-h-full img-zoom-wrap">
           <SiteImage
-            src={images.luxuryGym}
-            alt="Modern luxury fitness studio"
+            src={images.mission}
+            alt="Person celebrating achievement at sunset on a mountain path"
             fill
             showSkeleton={false}
+            className="mission-section-image"
           />
-          <div className="absolute inset-0 bg-navy/30" />
         </MotionReveal>
         <div className="bg-offwhite px-8 py-16 lg:px-16 lg:py-24 flex flex-col justify-center">
           <MotionReveal>
@@ -285,9 +286,9 @@ export default function HomePage() {
               Our coaches uncover the real problem first: physical obstacles, habits, lifestyle,
               and mindset. Only then do we build your personalised roadmap.
             </p>
-            <Button href="/about" variant="navy">
+            <PremiumButton href="/about" variant="primary" size="md">
               Discover Our Philosophy
-            </Button>
+            </PremiumButton>
           </MotionReveal>
         </div>
       </section>

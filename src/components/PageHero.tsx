@@ -15,7 +15,7 @@ type Props = {
 
 export function PageHero({ eyebrow, title, description, ctaHref, ctaLabel, image }: Props) {
   return (
-    <section className="relative overflow-hidden bg-navy pt-28 sm:pt-32 md:pt-36 pb-16 sm:pb-20 md:pb-24 section-dark min-h-[44vh] md:min-h-[52vh] flex items-end">
+    <section className="relative overflow-hidden bg-navy pt-12 sm:pt-16 pb-16 sm:pb-20 md:pb-24 section-dark min-h-[44vh] md:min-h-[52vh] flex items-end">
       {image && (
         <div className="absolute inset-0 hidden md:block">
           <SiteImage
